@@ -38,27 +38,6 @@ from passlib.hash import pbkdf2_sha256
 
 
 
-# #TO CHECK ALL THE ENVIRONMENT VARIABLES ARE THERE
-# class Settings(BaseSettings):#checks local environment variablea (IN THE HOST)to see if the following variables are there
-#    database_hostname:str
-#    database_port:str
-#    database_password:str
-#    database_name:str
-#    database_username:str
-#    secret_key:str
-#    algorithm:str
-#    access_token_expire_minutes:int
-  
-#    class Config:
-#        env_file=".env"
-
-
-# settings= Settings()
-
-
-
-# postgres:password@localhost/test
-# //arjangill:gill1239191@ag-sales.cakbpijtfzog.ap-southeast-2.rds.amazonaws.com:5432/arjansales
 
 engine= create_engine('mysql+pymysql://arjangillmain:gill12391@p3nlmysql77plsk.secureserver.net:3306/ph16873094761_', pool_recycle=3600)
 
